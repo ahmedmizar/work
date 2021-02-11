@@ -107,7 +107,7 @@
               </li>
               <li><a class="page-scroll" href="#team">Team</a></li>
               <li><a class="page-scroll" href="#news">News</a></li>
-              <li><a class="page-scroll" href="#about">About us/FAQ</a></li>
+              <li><a class="page-scroll" href="faq.html">FAQ</a></li>
 
               <li><a class="page-scroll" href="#contact">Contact us</a></li>
             </ul>
@@ -118,41 +118,86 @@
     <!-- end of navigation -->
 
     <!-- HEADER -->
-    <header id="header">
-      <div class="flex-container-wrapper">
-        <!-- IE fix for vertical alignment in flex box -->
-        <div class="header-content video-section">
-          <div class="pattern-overlay">
-            <a
-              id="bgndVideo"
-              class="player"
-              data-property="{videoURL:'https://www.youtube.com/watch?v=jMZ_wW4FGbM&feature',containment:'.video-section', quality:'highres', autoPlay:true, showControls: false, startAt:10, stopAt: 40, mute:true, opacity: 1}"
-            ></a>
-            <div class="container">
-              <div class="row">
-                <h1>
-                  Additive Manufacturing Centennial Lab
-                  <span id="js-rotating">Vision, Mission</span>
-                </h1>
-                <!-- <p class="heading-paragraph">
-                  Landing page template for growing businesses
-                </p> -->
-                <a class="button-solid page-scroll" href="#what_we"
-                  >What We Do ?</a
-                >
-                <a class="page-scroll" href="#what_we"
-                  ><i class="fa fa-angle-down fa-3x"></i
-                ></a>
+    <div id="header" class="swiper-container-header">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide first">
+          <div class="flex-container-wrapper">
+            <!-- IE fix for vertical alignment in flex box -->
+            <div class="header-content text-center">
+              <div class="container">
+                <div class="row">
+                  <h1>LANDING PAGE</h1>
+                  <p class="heading-paragraph">
+                    Designed for emerging startups and businesses
+                  </p>
+                  <a class="button-solid page-scroll" href="#what_we"
+                    >What We Do</a
+                  >
+                  <a class="page-scroll" href="#what_we"
+                    ><i class="fa fa-angle-down fa-3x"></i
+                  ></a>
+                </div>
               </div>
             </div>
-            <!-- end of container -->
+            <!-- end of header content -->
           </div>
+          <!-- end of flex container wrapper -->
         </div>
-        <!-- end of header-content -->
-        <!-- end of header-content -->
+        <!-- end of first -->
+        <div class="swiper-slide second">
+          <div class="flex-container-wrapper">
+            <!-- IE fix for vertical alignment in flex box -->
+            <div class="header-content text-center">
+              <div class="container">
+                <div class="row">
+                  <h1>ONLINE PRESENCE</h1>
+                  <p class="heading-paragraph">
+                    Increased awareness for growing companies
+                  </p>
+                  <a class="button-solid page-scroll" href="#what_we"
+                    >What We Do</a
+                  >
+                  <a class="page-scroll" href="#what_we"
+                    ><i class="fa fa-angle-down fa-3x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- end of header content -->
+          </div>
+          <!-- end of flex container wrapper -->
+        </div>
+        <!-- end of second -->
+        <div class="swiper-slide third">
+          <div class="flex-container-wrapper">
+            <!-- IE fix for vertical alignment in flex box -->
+            <div class="header-content text-center">
+              <div class="container">
+                <div class="row">
+                  <h1>BUSINESS TEMPLATE</h1>
+                  <p class="heading-paragraph">
+                    Landing page template for growing businesses
+                  </p>
+                  <a class="button-solid page-scroll" href="#what_we"
+                    >What We Do</a
+                  >
+                  <a class="page-scroll" href="#what_we"
+                    ><i class="fa fa-angle-down fa-3x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- end of header content -->
+          </div>
+          <!-- end of flex container wrapper -->
+        </div>
+        <!-- end of first -->
       </div>
-      <!-- end of IE vertical alignment fix -->
-    </header>
+      <!-- end of swiper wrapper -->
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
     <!-- end of header -->
 
     <!-- What We Do ? -->
@@ -224,48 +269,44 @@
           <!-- Tab_b -->
           <div class="tab-pane tab-b fade" id="tab_b">
             <div class="row">
-              <div class="col-lg-12">
-                <!-- Image Gallery Swiper -->
-                <div class="my-swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a
-                        href="http://placehold.it/797x669/3a3a3a/fff/"
-                        class="popup-link"
-                        data-effect="fadeIn"
-                        ><img
-                          class="img-responsive"
-                          src="http://placehold.it/797x669/3a3a3a/fff/"
-                          alt="software image"
-                      /></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a
-                        href="http://placehold.it/797x669/3a3a3a/fff/"
-                        class="popup-link"
-                        data-effect="fadeIn"
-                        ><img
-                          class="img-responsive"
-                          src="http://placehold.it/797x669/3a3a3a/fff/"
-                          alt="software image"
-                      /></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a
-                        href="http://placehold.it/797x669/3a3a3a/fff/"
-                        class="popup-link"
-                        data-effect="fadeIn"
-                        ><img
-                          class="img-responsive"
-                          src="http://placehold.it/797x669/3a3a3a/fff/"
-                          alt="software image"
-                      /></a>
-                    </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224521_Drive.jpg"
+                      alt="product image"
+                    />
                   </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
+
+                  <h4>6 axis robotic arm</h4>
                 </div>
-                <!-- end of image gallery swiper -->
+              </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224553_Drive.jpg"
+                      alt="product image"
+                    />
+                  </div>
+
+                  <h4>2 axis table</h4>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224537_Drive.jpg"
+                      alt="product image"
+                    />
+                  </div>
+
+                  <h4>2 axis table</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -291,6 +332,9 @@
             </li>
             <li>
               <a href="#tab_presentations" data-toggle="tab">Presentations</a>
+            </li>
+            <li>
+              <a href="#tab_casestudies" data-toggle="tab">Case Studies</a>
             </li>
           </ul>
         </div>
@@ -346,59 +390,144 @@
           <!-- tab_presentations -->
           <div class="tab-pane tab-presentations fade" id="tab_presentations">
             <div class="row">
-              <div class="col-lg-12">
-                <!-- Image Gallery Swiper -->
-                <div class="my-swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a
-                        href="http://placehold.it/797x669/3a3a3a/fff/"
-                        class="popup-link"
-                        data-effect="fadeIn"
-                        ><img
-                          class="img-responsive"
-                          src="http://placehold.it/797x669/3a3a3a/fff/"
-                          alt="software image"
-                      /></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a
-                        href="http://placehold.it/797x669/3a3a3a/fff/"
-                        class="popup-link"
-                        data-effect="fadeIn"
-                        ><img
-                          class="img-responsive"
-                          src="http://placehold.it/797x669/3a3a3a/fff/"
-                          alt="software image"
-                      /></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a
-                        href="http://placehold.it/797x669/3a3a3a/fff/"
-                        class="popup-link"
-                        data-effect="fadeIn"
-                        ><img
-                          class="img-responsive"
-                          src="http://placehold.it/797x669/3a3a3a/fff/"
-                          alt="software image"
-                      /></a>
-                    </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224521_Drive.jpg"
+                      alt="product image"
+                    />
                   </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
+
+                  <h4>6 axis robotic arm</h4>
                 </div>
-                <!-- end of image gallery swiper -->
+              </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224553_Drive.jpg"
+                      alt="product image"
+                    />
+                  </div>
+
+                  <h4>2 axis table</h4>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224537_Drive.jpg"
+                      alt="product image"
+                    />
+                  </div>
+
+                  <h4>2 axis table</h4>
+                </div>
               </div>
             </div>
           </div>
           <!-- end -->
-          <!-- end of tab_b -->
+          <!-- end of tab_Case Studies -->
+          <div class="tab-pane tab-casestudies fade" id="tab_casestudies">
+            <div class="row">
+              <div class="col-sm-4">
+                <a class="popup-with-move-anim" href="#case-studies">
+                  <div class="equipment-container">
+                    <div class="image-container">
+                      <img
+                        class="img-responsive"
+                        src="images/SmartSelect_20201014-224521_Drive.jpg"
+                        alt="product image"
+                      />
+                    </div>
+
+                    <h4>6 axis robotic arm</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224553_Drive.jpg"
+                      alt="product image"
+                    />
+                  </div>
+
+                  <h4>2 axis table</h4>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="equipment-container">
+                  <div class="image-container">
+                    <img
+                      class="img-responsive"
+                      src="images/SmartSelect_20201014-224537_Drive.jpg"
+                      alt="product image"
+                    />
+                  </div>
+
+                  <h4>2 axis table</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of tab_a -->
         </div>
         <!-- end of tab content -->
       </div>
       <!-- end of container -->
     </div>
     <!-- end of products -->
+    <!--start Case Studies-->
+
+    <div
+      id="case-studies"
+      class="project-details-container zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-md-7">
+          <img
+            class="img-responsive"
+            src="http://placehold.it/722x704/3a3a3a/fff/"
+            alt="project image"
+          />
+        </div>
+        <div class="col-md-5">
+          <h3>Zazoo Apps Project</h3>
+          <hr />
+          <p>
+            Zazoo Apps project was very challenging due to the highly sensitive
+            nature of banking data but Vera's development team pulled it off.
+          </p>
+          <ul>
+            <li>Highly sensitive nature of banking data</li>
+            <li>Time pressure due to launch of other projects</li>
+            <li>Synchronization between development teams</li>
+          </ul>
+          <div class="project-quote">
+            <p>
+              "I absolutely loved to work with Vera team. They are highly
+              skilled software engineers but also have the necessary business
+              acumen to understand our requests."
+            </p>
+            <span><strong>Stanley Finn</strong> - General, Zazoo Apps</span>
+          </div>
+          <a class="button-outline mfp-close as-button" href="#project">BACK</a>
+          <!-- <a class="button-solid" href="#your-link-here">VIEW</a> -->
+        </div>
+      </div>
+    </div>
+    <!-- end Case Studies -->
 
     <!-- Magnific Popup Products Details Content -->
     <!-- mfp-hide class is required to keep the content hidden until the visitor clicks the button -->
@@ -583,7 +712,6 @@
 
         <div class="button-group filters-button-group">
           <a class="button is-checked" data-filter="*"><h5>Show All</h5></a>
-          <a class="button" data-filter=".banking"><h5>Case Studies</h5></a>
           <a class="button" data-filter=".government"><h5>3D Scanning</h5></a>
           <a class="button" data-filter=".hospitality"
             ><h5>Topology Optimization</h5></a
@@ -988,7 +1116,7 @@
     <!-- end of magnific popup project details content -->
 
     <!-- ABOUT -->
-    <div id="about" class="about clearfix">
+    <div id="news" class="about clearfix">
       <div class="container text-center">
         <h2>News</h2>
         <hr class="under-heading" />
@@ -1063,35 +1191,6 @@
       <div class="about-image-pane"></div>
     </div>
     <!-- end of about -->
-
-    <!-- STATISTICS -->
-    <div class="statistics">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="number-container">
-              <p><span class="counter">250</span></p>
-              <p class="big-numbers-heading">Happy Customers</p>
-            </div>
-            <div class="number-container">
-              <p><span class="counter">480</span></p>
-              <p class="big-numbers-heading">Delivered Projects</p>
-            </div>
-            <div class="number-container">
-              <p><span class="counter">642</span></p>
-              <p class="big-numbers-heading">Quote Proposals</p>
-            </div>
-            <div class="number-container">
-              <p><span class="counter">120</span></p>
-              <p class="big-numbers-heading">Staff Members</p>
-            </div>
-          </div>
-        </div>
-        <!-- end of row -->
-      </div>
-      <!-- end of container -->
-    </div>
-    <!-- end of statistics -->
 
     <!-- TEAM -->
     <div id="team" class="team">
@@ -1191,38 +1290,6 @@
       </div>
     </div>
     <!-- end of team -->
-
-    <!-- NEWSLETTER -->
-    <div class="newsletter">
-      <div class="container text-center">
-        <h2>UPDATES</h2>
-        <p class="under-heading">
-          We're constantly developing new and interesting projects for
-          commercial and non-profit use. Stay on top of everything related to
-          Vera by siging-up to our regular newsletter.
-        </p>
-
-        <!-- Newsletter Form -->
-        <form id="SignupForm" data-toggle="validator">
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <button type="submit" class="button-small-solid">SIGN UP</button>
-          </div>
-          <div class="form-message">
-            <div id="msgSubmit" class="h3 text-center hidden"></div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- end of newsletter -->
 
     <!-- CONTACT -->
     <div id="contact" class="contact">

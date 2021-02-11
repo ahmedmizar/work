@@ -105,7 +105,18 @@
             $('a.back-to-top').fadeOut('500');
         }
     });
+    /* HEADER SWIPER */
+    var swiper = new Swiper('.swiper-container-header', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false,
 
+        // If we need pagination
+        pagination: '.swiper-pagination',
+        paginationType: 'bullets',
+        paginationClickable: true
+    });
 
     /* SOLUTIONS IMAGE GALLERY SWIPER */
     var MySwiper = new Swiper('.my-swiper-container', {

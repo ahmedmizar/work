@@ -394,61 +394,72 @@ p.under-heading {
 /**********************/
 /*     04. HEADER     */
 /**********************/
-header {
+.swiper-container-header {
   position: relative;
+  overflow: hidden;
   width: 100%;
-  min-height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("../images/header-background.jpg") center no-repeat;
+  min-height: 99vh;
+  background: #f0f9fc; /* For browsers that do not support gradients */
+}
+
+.swiper-container-header .swiper-slide.first {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/* IE fix for vertical alignment in flex box */
-header .flex-container-wrapper {
+.swiper-container-header .swiper-slide.second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.swiper-container-header .swiper-slide.third {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.swiper-container-header .flex-container-wrapper {
+  /* IE fix for vertical alignment in flex box */
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-header .header-content.video-section {
-  position: relative;
+.swiper-container-header .header-content {
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 97vh;
+  margin-top: 25px;
+  padding: 40px 0px 20px 0px;
   text-align: center;
 }
 
-/* Video background section from YTPlayer */
-header .header-content.video-section .pattern-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 90px 0px 20px 0px;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.5)
-  ); /* increase 0.3 to any value under 1 to darken the video background */
-}
-
-header .header-content.video-section h1 {
+.swiper-container-header .header-content h1 {
   color: #fff;
 }
 
-header .header-content.video-section p.heading-paragraph {
+.swiper-container-header .header-content p.heading-paragraph {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  color: #fff;
   font: 300 26px/1.4em "Khula", sans-serif;
+  color: #fff;
 }
 
-header .header-content.video-section .button-solid {
+.swiper-container-header .header-content .button-solid {
   display: block;
   width: 180px;
   height: 48px;
@@ -456,10 +467,9 @@ header .header-content.video-section .button-solid {
   margin-right: auto;
   margin-left: auto;
   font: 500 17px/46px "Montserrat", sans-serif;
-  white-space: nowrap;
 }
 
-header .header-content.video-section .fa-angle-down {
+.swiper-container-header .header-content .fa-angle-down {
   margin-top: 40px;
   color: #ff631e;
   -o-transition: all 0.2s;
@@ -468,12 +478,23 @@ header .header-content.video-section .fa-angle-down {
   transition: all 0.2s;
 }
 
-header .header-content.video-section .fa-angle-down:hover {
+.swiper-container-header .header-content .fa-angle-down:hover {
   -webkit-transform: translate(0px, 7px);
   -moz-transform: translate(0px, 7px);
   -o-transform: translate(0px, 7px);
   -ms-transform: translate(0px, 7px);
   transform: translate(0px, 7px);
+}
+
+.swiper-container-header .swiper-pagination {
+  bottom: 30px;
+}
+
+.swiper-container-header .swiper-pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  margin: 0 6px;
+  background: #fff;
 }
 
 /*************************/
@@ -627,6 +648,7 @@ header .header-content.video-section .fa-angle-down:hover {
 
 .what_we .my-swiper-container .swiper-slide,
 .patents_presentations .my-swiper-container .swiper-slide {
+  background: #fff;
   font-size: 18px;
   line-height: 300px;
   text-align: center;
@@ -2144,4 +2166,86 @@ a:hover.back-to-top {
   .footer {
     padding-bottom: 10px;
   }
+}
+.nav-faq {
+  background-color: #191919;
+}
+.fAq {
+  padding-top: 100px;
+  background-color: #f4f4f4;
+}
+.fAq .questions-container .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.fAq .questions-container .card :last-of-type {
+  margin-bottom: 0px;
+}
+.fAq .questions-container .card h5 {
+  margin-top: 0px;
+}
+.fAq .questions-container .card h5 .btn-link {
+  color: #464646;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: normal;
+  text-align: left;
+  padding: 0;
+}
+.fAq .questions-container .card h5 .btn-link:focus {
+  outline: none;
+  box-shadow: none;
+  outline-offset: none;
+}
+.fAq .questions-container .card .card-body h3 {
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: -1px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.fAq .questions-container .card .card-body ul {
+  list-style: none;
+}
+.fAq .questions-container .card .card-body ul li {
+  display: flex;
+  align-items: baseline;
+}
+.fAq .questions-container .card .card-body p {
+  line-height: 20px;
+}
+.fAq .questions-container .card .card-body ul li p {
+  margin: 0;
+  margin-left: 10px;
+  width: 98%;
+  line-height: 20px;
+}
+.fa-location-arrow {
+  -webkit-transform: rotate3d(1, 1, 3, 45deg);
+  -moz-transform: rotate3d(1, 1, 3, 45deg);
+  -o-transform: rotate3d(1, 1, 3, 45deg);
+  transform: rotate3d(1, 1, 3, 45deg);
+  margin-right: 5px;
+  color: #ff631e;
+  font-size: 20px;
+  width: 2%;
+}
+.last-p {
+  margin-bottom: 20px !important;
+}
+.yellow-title {
+  color: #ff631e;
+  letter-spacing: -1px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px !important;
+}
+.bults {
+  list-style: disc;
+}
+.fAq .questions-container .card .card-body ol li {
+  display: list-item !important;
 }

@@ -2173,6 +2173,8 @@ a:hover.back-to-top {
 .fAq {
   padding-top: 100px;
   background-color: #f4f4f4;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .fAq .questions-container .card {
   background: #fff;
@@ -2267,4 +2269,8 @@ a:hover.back-to-top {
 .equipment-container p {
   font-size: 16px;
   line-height: 20px;
+}
+.news {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

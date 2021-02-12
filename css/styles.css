@@ -2249,3 +2249,22 @@ a:hover.back-to-top {
 .fAq .questions-container .card .card-body ol li {
   display: list-item !important;
 }
+.equipment-container {
+  text-align: left;
+}
+.equipment-container img {
+  height: 250px !important;
+  width: 100%;
+}
+.equipment-container h4 {
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.equipment-container ul {
+  list-style: none;
+}
+.equipment-container p {
+  font-size: 16px;
+  line-height: 20px;
+}

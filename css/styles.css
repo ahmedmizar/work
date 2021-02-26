@@ -401,33 +401,46 @@ p.under-heading {
   min-height: 99vh;
   background: #f0f9fc; /* For browsers that do not support gradients */
 }
+.swiper-slide {
+  position: relative;
+}
+#myVideo {
+  position: absolute;
+  top: 0;
 
-.swiper-container-header .swiper-slide.first {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* .swiper-container-header .swiper-slide.first {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
+    url("../images/ArcWelding\ Robotic\ Simulation\ V3.mp4") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
-.swiper-container-header .swiper-slide.second {
+/* .swiper-container-header .swiper-slide.second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
     url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
-.swiper-container-header .swiper-slide.third {
+/* .swiper-container-header .swiper-slide.third {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 .swiper-container-header .flex-container-wrapper {
   /* IE fix for vertical alignment in flex box */
@@ -508,7 +521,7 @@ p.under-heading {
 
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 80vh !important;
 }
 
 .swiper-slide {
@@ -642,7 +655,7 @@ p.under-heading {
   .my-swiper-container
   .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #b4b4b4;
+  background: #ff631e;
   opacity: 1;
 }
 
@@ -2273,4 +2286,99 @@ a:hover.back-to-top {
 .news {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* Text Overlay */
+#lab_video_text_overlay h1 {
+  font-size: 50px;
+  color: #191919;
+  font-weight: bold;
+}
+#lab_video_text_overlay p {
+  font-size: 25px;
+  color: #191919;
+}
+
+#lab_video_text_overlay .btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+#lab_video_text_overlay .btn-warning {
+  background-color: #f5d328;
+}
+
+#lab_video_text_overlay {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#lab_video_text_overlay .container {
+  text-align: center;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 991px) {
+  #lab_video_text_wrap {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #lab_video_text_wrap {
+    height: 250px;
+  }
+  #lab_video_text_overlay h2 {
+    font-size: 2em;
+  }
+  #lab_video_text_overlay p {
+    font-size: 0.9em;
+  }
+}
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ff631e;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-container {
+    height: 100% !important;
+  }
 }

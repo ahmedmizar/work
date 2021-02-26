@@ -106,17 +106,17 @@
         }
     });
     /* HEADER SWIPER */
-    var swiper = new Swiper('.swiper-container-header', {
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
+    // var swiper = new Swiper('.swiper-container-header', {
+    //     spaceBetween: 0,
+    //     centeredSlides: true,
+    //     autoplay: 5000,
+    //     autoplayDisableOnInteraction: false,
 
-        // If we need pagination
-        pagination: '.swiper-pagination',
-        paginationType: 'bullets',
-        paginationClickable: true
-    });
+
+    //     pagination: '.swiper-pagination',
+    //     paginationType: 'bullets',
+    //     paginationClickable: true
+    // });
 
     /* SOLUTIONS IMAGE GALLERY SWIPER */
     var MySwiper = new Swiper('.my-swiper-container', {
@@ -311,6 +311,15 @@
     /* REMOVES LONG FOCUS ON BUTTONS */
     $(".button, a, button").mouseup(function () {
         $(this).blur();
+    });
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
     });
 
 })(jQuery);

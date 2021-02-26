@@ -521,7 +521,7 @@ p.under-heading {
 
 .swiper-container {
   width: 100%;
-  height: 80vh !important;
+  /* height: 80vh !important; */
 }
 
 .swiper-slide {
@@ -1406,8 +1406,7 @@ p.under-heading {
 .team .team-member {
   display: inline-block;
   margin-top: 30px;
-  margin-right: 13px;
-  margin-left: 13px;
+  width: 100%;
 }
 
 .team .team-member img {
@@ -1433,7 +1432,7 @@ p.under-heading {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 302px;
 }
 
 .team .team-member .image-container .hover-overlay {

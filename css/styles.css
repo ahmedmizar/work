@@ -2287,11 +2287,8 @@ a:hover.back-to-top {
   padding-bottom: 100px;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 80vh;
-}
 
+/* 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -2310,7 +2307,7 @@ a:hover.back-to-top {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
+} */
 
 /* Text Overlay */
 #lab_video_text_overlay h1 {
@@ -2381,3 +2378,88 @@ body {
     height: 100% !important;
   }
 }
+/*     04. HEADER     */
+/**********************/
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../images/header-background.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* IE fix for vertical alignment in flex box */
+header .flex-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header .header-content.video-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Video background section from YTPlayer */
+header .header-content.video-section .pattern-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 90px 0px 20px 0px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)
+  ); /* increase 0.3 to any value under 1 to darken the video background */
+}
+
+header .header-content.video-section h1 {
+  color: #fff;
+}
+
+header .header-content.video-section p.heading-paragraph {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font: 300 26px/1.4em "Khula", sans-serif;
+}
+
+header .header-content.video-section .button-solid {
+  display: block;
+  width: 180px;
+  height: 48px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font: 500 17px/46px "Montserrat", sans-serif;
+  white-space: nowrap;
+}
+
+header .header-content.video-section .fa-angle-down {
+  margin-top: 40px;
+  color: #ff631e;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header .header-content.video-section .fa-angle-down:hover {
+  -webkit-transform: translate(0px, 7px);
+  -moz-transform: translate(0px, 7px);
+  -o-transform: translate(0px, 7px);
+  -ms-transform: translate(0px, 7px);
+  transform: translate(0px, 7px);
+}
+
+/*************************/

@@ -119,122 +119,40 @@
     <!-- end of navigation -->
 
     <!-- HEADER -->
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div id="slide_one" class="swiper-slide">
-          <div id="lab_video_text_overlay">
+    <!-- HEADER -->
+    <header id="header">
+      <div class="flex-container-wrapper">
+        <!-- IE fix for vertical alignment in flex box -->
+        <div class="header-content video-section">
+          <div class="pattern-overlay">
+            <a
+              id="bgndVideo"
+              class="player"
+              data-property="{videoURL:'https://www.youtube.com/watch?v=jMZ_wW4FGbM&feature',containment:'.video-section', quality:'highres', autoPlay:true, showControls: false, startAt:10, stopAt: 40, mute:true, opacity: 1}"
+            ></a>
             <div class="container">
-              <h1>Additive Manufacturing Centennial Lab</h1>
+              <div class="row">
+                <h1>Additive Manufacturing Centennial Lab</h1>
+                <!-- <p class="heading-paragraph">
+                Landing page template for growing businesses
+              </p> -->
+                <a class="button-solid page-scroll" href="#what_we"
+                  >What We Do ?</a
+                >
+                <a class="page-scroll" href="#what_we"
+                  ><i class="fa fa-angle-down fa-3x"></i
+                ></a>
+              </div>
             </div>
+            <!-- end of container -->
           </div>
-          <!-- VIDEO -->
-          <video
-            class="slider-video"
-            width="100%"
-            preload="auto"
-            loop=""
-            loop="true"
-            autoplay="auto"
-            style="visibility: visible; width: 100%"
-          >
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/webm"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/ogg"
-            />
-          </video>
-          <!-- END VIDEO -->
         </div>
-
-        <div id="slide_two" class="swiper-slide">
-          <div id="lab_video_text_overlay">
-            <div class="container">
-              <h1>Vision</h1>
-              <p class="heading-paragraph">
-                To establish a leading research and innovation center in
-                additive manufacturing in Egypt and the MENA region.
-              </p>
-            </div>
-          </div>
-          <!-- end #lab_overlay -->
-
-          <video
-            class="slider-video"
-            width="100%"
-            preload="auto"
-            loop="true"
-            autoplay="auto"
-            style="visibility: visible; width: 100%"
-          >
-            <source
-              type="video/mp4"
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/webm"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/ogg"
-            />
-          </video>
-        </div>
-
-        <div id="slide_three" class="swiper-slide">
-          <div id="lab_video_text_overlay">
-            <div class="container">
-              <h1>Mission</h1>
-              <p class="heading-paragraph">
-                To prepare generations of scientists and engineers, equipped
-                with practical experience and knowledge, for partaking in the
-                evolving AM technology. In addition to boosting the Egyptian
-                industry through networking of a key player in the field of AM
-                locally, regionally and internationally.
-              </p>
-            </div>
-          </div>
-          <!-- VIDEO -->
-          <video
-            class="slider-video"
-            width="100%"
-            preload="auto"
-            style="visibility: visible; width: 100%"
-          >
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/webm"
-            />
-            <source
-              src="./images/ArcWelding Robotic Simulation V3.mp4"
-              type="video/ogg"
-            />
-          </video>
-          <!-- END VIDEO -->
-        </div>
+        <!-- end of header-content -->
+        <!-- end of header-content -->
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-    </div>
+      <!-- end of IE vertical alignment fix -->
+    </header>
+    <!-- end of header -->
     <!-- end of header -->
 
     <!-- What We Do ? -->
@@ -389,30 +307,17 @@
                 </a>
               </div>
               <div class="col-sm-4">
-                <div class="equipment-container">
-                  <div class="image-container">
-                    <img
-                      class="img-responsive"
-                      src="images/SmartSelect_20201014-224553_Drive.jpg"
-                      alt="product image"
-                    />
+                <a class="popup-with-move-anim" href="#helicopter">
+                  <div class="equipment-container">
+                    <div class="image-container">
+                      <img
+                        class="img-responsive"
+                        src="images/Engineering Solutions/Capture.PNG"
+                        alt="product image"
+                      />
+                    </div>
                   </div>
-
-                  <h4>2 axis table</h4>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="equipment-container">
-                  <div class="image-container">
-                    <img
-                      class="img-responsive"
-                      src="images/SmartSelect_20201014-224537_Drive.jpg"
-                      alt="product image"
-                    />
-                  </div>
-
-                  <h4>2 axis table</h4>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -457,7 +362,7 @@
                     <div class="image-container">
                       <img
                         class="img-responsive"
-                        src="images/Case Studies/IMG-3476.jpg"
+                        src="images/Case Studies/Capture2.png"
                         alt="product image"
                       />
                     </div>
@@ -849,6 +754,42 @@
       </div>
     </div>
     <!--end  the spindle-->
+
+    <!--start  the helicopter -->
+
+    <div
+      id="helicopter"
+      class="project-details-container zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-md-7">
+          <img
+            class="img-responsive"
+            src="images/Engineering Solutions/Capture.PNG"
+            alt="project image"
+          />
+        </div>
+        <div class="col-md-5">
+          <h3>A Helicopter</h3>
+          <hr />
+          <p>
+            A helicopter landing skid made from an aluminum alloy sufferd from a
+            damaging fracture during landing. Using WAAM in combination with
+            advanced modelling techniques, an optimum path from the robot was
+            generated in order to reattach and repair the skid again.
+          </p>
+
+          <a class="button-outline mfp-close as-button" href="#helicopter"
+            >BACK</a
+          >
+          <!-- <a class="button-solid" href="#your-link-here">VIEW</a> -->
+        </div>
+      </div>
+    </div>
+    <!--end  the helicopter -->
     <!-- end Engineering Solutions -->
     <!--start Case Studies-->
 
@@ -870,25 +811,23 @@
           />
         </div>
         <div class="col-md-5">
-          <h3>Zazoo Apps Project</h3>
+          <h3>An airfoil</h3>
           <hr />
           <p>
-            Zazoo Apps project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
+            An airfoil is the cross-section of of a wing or a blade. The
+            ultiamte function of the airfoil is that it allows the body to move
+            through a fluid while producing maximum lift and minimum drag.
+            Therefore an entire field of engineering called airfoil theory is
+            concerned with optimizing the shape of the airfoil. The weight per
+            unit lenght of the cross-section play an important role in
+            determining the effectiveness of the airfoil. The larger the weight
+            the less lift the airfoil is able to produde. Therefore, with the
+            utilization of WAAM, large strides were taken in the optimization of
+            the airfoil shape as hollow airfoils with strategically places
+            supports could now be manufactures with relative ease thus reducing
+            the cost and increasing the efficiency of the airfoil.
           </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Stanley Finn</strong> - General, Zazoo Apps</span>
-          </div>
+
           <a class="button-outline mfp-close as-button" href="#project">BACK</a>
           <!-- <a class="button-solid" href="#your-link-here">VIEW</a> -->
         </div>
@@ -914,25 +853,20 @@
           />
         </div>
         <div class="col-md-5">
-          <h3>Zazoo Apps Project</h3>
+          <h3>Traditional Machining Techniques</h3>
           <hr />
           <p>
-            Zazoo Apps project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
+            Using traditional manuafacturing methods to manufacture this blade
+            would require procurement of a large cylindrical billet, which would
+            then be machined down to the final shape. This, of course, would
+            result in a huge amount of both material and time waste. Using WAAM,
+            the rough profile can be built up and then the final dimensions can
+            be achieved through traditional machining techniques.
           </p>
           <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
+            <li>Mass Reduction = 78.9%</li>
           </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Stanley Finn</strong> - General, Zazoo Apps</span>
-          </div>
+
           <a class="button-outline mfp-close as-button" href="#project">BACK</a>
           <!-- <a class="button-solid" href="#your-link-here">VIEW</a> -->
         </div>
@@ -951,32 +885,22 @@
         <div class="col-md-7">
           <img
             class="img-responsive"
-            src="images/Case Studies/IMG-3476.jpg"
+            src="images/Case Studies/Capture2.png"
             alt="project image"
             width="100%;"
             height="100%;"
           />
         </div>
         <div class="col-md-5">
-          <h3>Zazoo Apps Project</h3>
+          <h3>Small Vase</h3>
           <hr />
           <p>
-            Zazoo Apps project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
+            This small vase is a good exercise for WAAM operation. It allows the
+            trainees to get experience with dealing with the overlapping beads
+            and buidling shapes that would require large amounts of material
+            waste using traditional manufacturing methods.
           </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Stanley Finn</strong> - General, Zazoo Apps</span>
-          </div>
+
           <a class="button-outline mfp-close as-button" href="#project">BACK</a>
           <!-- <a class="button-solid" href="#your-link-here">VIEW</a> -->
         </div>
@@ -1166,71 +1090,47 @@
 
         <div class="button-group filters-button-group">
           <a class="button is-checked" data-filter="*"><h5>Show All</h5></a>
-          <a class="button" data-filter=".government"><h5>3D Scanning</h5></a>
-          <a class="button" data-filter=".hospitality"
-            ><h5>Topology Optimization</h5></a
-          >
-          <a class="button" data-filter=".manufacturing"
-            ><h5>Microstructure Characterization</h5></a
-          >
-          <a class="button" data-filter=".manufacturing"
+          <a class="button" data-filter=".scanning"><h5>3D Scanning</h5></a>
+          <a class="button" data-filter=".heat-treatment"
             ><h5>Heat Treatment</h5></a
+          >
+
+          <a class="button" data-filter=".topology-optimization"
+            ><h5>Topology Optimization</h5></a
           >
         </div>
 
         <div class="grid">
-          <div class="element-item government">
-            <a class="popup-with-move-anim" href="#project-1"
-              ><div class="element-item-overlay"><span>Invest Bank</span></div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
+          <div class="element-item scanning">
+            <a class="popup-with-move-anim" href="#scanning"
+              ><div class="element-item-overlay"><span>3D Scanning</span></div>
+              <img
+                height="250px"
+                src="./images/how we can help you/scanning.png"
+                alt="project"
             /></a>
           </div>
-          <div class="element-item government">
-            <a class="popup-with-move-anim" href="#project-2"
+
+          <div class="element-item heat-treatment">
+            <a class="popup-with-move-anim" href="#heat-treatment"
               ><div class="element-item-overlay">
-                <span>Classic Industry</span>
+                <span>Heat Treatment</span>
               </div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
+              <img
+                height="250px"
+                src="./images/how we can help you/endothermic.png"
+                alt="project"
             /></a>
           </div>
-          <div class="element-item banking government hospitality">
-            <a class="popup-with-move-anim" href="#project-3"
+          <div class="element-item topology-optimization">
+            <a class="popup-with-move-anim" href="#topology-optimization"
               ><div class="element-item-overlay">
-                <span>BoomBap Audio</span>
+                <span>Topology Optimization</span>
               </div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
-            /></a>
-          </div>
-          <div class="element-item banking government hospitality">
-            <a class="popup-with-move-anim" href="#project-4"
-              ><div class="element-item-overlay"><span>Van Moose</span></div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
-            /></a>
-          </div>
-          <div
-            class="element-item banking government hospitality manufacturing"
-          >
-            <a class="popup-with-move-anim" href="#project-5"
-              ><div class="element-item-overlay"><span>Joy Moments</span></div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
-            /></a>
-          </div>
-          <div class="element-item banking hospitality manufacturing">
-            <a class="popup-with-move-anim" href="#project-6"
-              ><div class="element-item-overlay"><span>Spark Events</span></div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
-            /></a>
-          </div>
-          <div class="element-item banking hospitality">
-            <a class="popup-with-move-anim" href="#project-7"
-              ><div class="element-item-overlay"><span>Casual Wear</span></div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
-            /></a>
-          </div>
-          <div class="element-item banking hospitality">
-            <a class="popup-with-move-anim" href="#project-8"
-              ><div class="element-item-overlay"><span>Zazoo Apps</span></div>
-              <img src="http://placehold.it/722x704/3a3a3a/fff/" alt="project"
+              <img
+                height="250px"
+                src="./images/how we can help you/large.jpeg"
+                alt="project"
             /></a>
           </div>
         </div>
@@ -1243,7 +1143,7 @@
     <!-- Magnific Popup Project Details Content -->
     <!-- mfp-hide class is required to keep the content hidden until the visitor clicks the button -->
     <div
-      id="project-1"
+      id="scanning"
       class="project-details-container zoom-anim-dialog mfp-hide"
     >
       <div class="row">
@@ -1253,39 +1153,34 @@
         <div class="col-md-7">
           <img
             class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
+            src="./images/how we can help you/scanning.png"
             alt="project image"
           />
         </div>
         <div class="col-md-5">
-          <h3>Invest Bank Project</h3>
+          <h3>Image Courtesy Of: Artec3D</h3>
           <hr />
           <p>
-            Invest Bank project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
+            3D Scanning is an advanced process where 3D models are created from
+            real world object or environment. A 3D Scanner is complicated piece
+            of hardware and software. It can be based on different technologies,
+            each with its own advantages and limitations. The technology has
+            multiple application in various industries ranging from the
+            entertainment and film industry to the aerospace industry.[]
           </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span
-              ><strong>John Monroe</strong> - General Manager, Invest Bank</span
-            >
-          </div>
+          <p>
+            In AMCL, 3D scanners are used for reverse engineering, which is
+            examining existing products in order to develop a better
+            understanding of the interconnections between the component so that
+            we are able to improve on the existing design.
+          </p>
+
           <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
         </div>
       </div>
     </div>
     <div
-      id="project-2"
+      id="heat-treatment"
       class="project-details-container zoom-anim-dialog mfp-hide"
     >
       <div class="row">
@@ -1295,38 +1190,42 @@
         <div class="col-md-7">
           <img
             class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
+            src="./images/how we can help you/endothermic.png"
             alt="project image"
           />
         </div>
         <div class="col-md-5">
-          <h3>Classic Industry Project</h3>
+          <h3>Image Courtesy of: Edinburgh Sensors</h3>
           <hr />
           <p>
-            Classic Industry project was very challenging due to the highly
-            sensitive nature of banking data but Vera's development team pulled
-            it off.
+            Heat Treatment is the process of heating and cooling metals in order
+            to alter their physical and often chemical properties. Heat
+            treatment is at the heart of any manufacturing technique and is an
+            essential step to produce high quality products. There are several
+            types of heat treatment processes including but not limited to,
+            annealing, hardening, normalizing, and tempering.
           </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Jack Rowney</strong> - PM, Classic Industry</span>
-          </div>
+          <p>
+            The main parameters of the heat treatment process is the temperature
+            at which the workpiece is heated at, and the time taken for
+            workpiece to return to room temperature. Varying these parameter
+            will alter accordingly alter the metal’s microstructure and thus
+            impart different properties. These properties may be increased
+            surface hardness, temperature resistance, ductility and strength.
+          </p>
+          <p>
+            AMCL has an extensive knowledge of heat treatment techniques in
+            addition to a supporting infrastructure of different machines and
+            equipment used for the heat treatment process. Find out more here.
+            (Link to heat treatment equipment)
+          </p>
+
           <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
         </div>
       </div>
     </div>
     <div
-      id="project-3"
+      id="topology-optimization"
       class="project-details-container zoom-anim-dialog mfp-hide"
     >
       <div class="row">
@@ -1336,237 +1235,47 @@
         <div class="col-md-7">
           <img
             class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
+            src="./images/how we can help you/large.jpeg"
             alt="project image"
           />
         </div>
         <div class="col-md-5">
-          <h3>BoomBap Audio Project</h3>
+          <h3>Image Courtesy of: Alexey Gromov</h3>
           <hr />
           <p>
-            BoomBap Audio project was very challenging due to the highly
-            sensitive nature of banking data but Vera's development team pulled
-            it off.
+            Topology is a field of mathematics that studies how properties of
+            geometric shape are preserved under different deformation conditions
+            such as stretching, twisting, crumpling and bending, but not tearing
+            or gluing.
           </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Kate Smith</strong> - Developer, BoomBap Audio</span>
-          </div>
+          <p>
+            Topology optimization (TO) is a design technique that aims to reduce
+            the weight of the product by removing materials from the design
+            while maintaining structural integrity. The resulting shape is
+            usually highly irregular and is difficult to manufacture using
+            conventional techniques, thus making it extremely suitable for
+            additive manufacturing.
+          </p>
+          <p>
+            The main objective of the mathematical model is to maximize
+            stiffness which is a function in the geometry of the product and the
+            material used. The design is discretized into a mesh, then each
+            component of the mesh is analyzed to find out whether it can be
+            removed while maintaining structural integrity or not. Multiple
+            iterations of this process will result in the optimum topology of
+            the design.
+          </p>
+          <p>
+            AMCL utilizes TO in the design process to ensure that our solutions
+            are engineered to maximize performance while minimizing cost and
+            material waste.
+          </p>
+
           <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
         </div>
       </div>
     </div>
-    <div
-      id="project-4"
-      class="project-details-container zoom-anim-dialog mfp-hide"
-    >
-      <div class="row">
-        <button title="Close (Esc)" type="button" class="mfp-close x-button">
-          ×
-        </button>
-        <div class="col-md-7">
-          <img
-            class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
-            alt="project image"
-          />
-        </div>
-        <div class="col-md-5">
-          <h3>Van Moose Project</h3>
-          <hr />
-          <p>
-            Van Moose project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
-          </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Will Vilmer</strong> - CEO, Van Moose</span>
-          </div>
-          <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div
-      id="project-5"
-      class="project-details-container zoom-anim-dialog mfp-hide"
-    >
-      <div class="row">
-        <button title="Close (Esc)" type="button" class="mfp-close x-button">
-          ×
-        </button>
-        <div class="col-md-7">
-          <img
-            class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
-            alt="project image"
-          />
-        </div>
-        <div class="col-md-5">
-          <h3>Joy Moments Project</h3>
-          <hr />
-          <p>
-            Joy Moments project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
-          </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Sam Browney</strong> - Manager, Joy Moments</span>
-          </div>
-          <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div
-      id="project-6"
-      class="project-details-container zoom-anim-dialog mfp-hide"
-    >
-      <div class="row">
-        <button title="Close (Esc)" type="button" class="mfp-close x-button">
-          ×
-        </button>
-        <div class="col-md-7">
-          <img
-            class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
-            alt="project image"
-          />
-        </div>
-        <div class="col-md-5">
-          <h3>Spark Events Project</h3>
-          <hr />
-          <p>
-            Spark Events project was very challenging due to the highly
-            sensitive nature of banking data but Vera's development team pulled
-            it off.
-          </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Lynda Store</strong> - Manager, Spartk Events</span>
-          </div>
-          <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div
-      id="project-7"
-      class="project-details-container zoom-anim-dialog mfp-hide"
-    >
-      <div class="row">
-        <button title="Close (Esc)" type="button" class="mfp-close x-button">
-          ×
-        </button>
-        <div class="col-md-7">
-          <img
-            class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
-            alt="project image"
-          />
-        </div>
-        <div class="col-md-5">
-          <h3>Casual Wear Project</h3>
-          <hr />
-          <p>
-            Casual Wear project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
-          </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Wilma Jade</strong> - Officer, Casual Wear</span>
-          </div>
-          <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div
-      id="project-8"
-      class="project-details-container zoom-anim-dialog mfp-hide"
-    >
-      <div class="row">
-        <button title="Close (Esc)" type="button" class="mfp-close x-button">
-          ×
-        </button>
-        <div class="col-md-7">
-          <img
-            class="img-responsive"
-            src="http://placehold.it/722x704/3a3a3a/fff/"
-            alt="project image"
-          />
-        </div>
-        <div class="col-md-5">
-          <h3>Zazoo Apps Project</h3>
-          <hr />
-          <p>
-            Zazoo Apps project was very challenging due to the highly sensitive
-            nature of banking data but Vera's development team pulled it off.
-          </p>
-          <ul>
-            <li>Highly sensitive nature of banking data</li>
-            <li>Time pressure due to launch of other projects</li>
-            <li>Synchronization between development teams</li>
-          </ul>
-          <div class="project-quote">
-            <p>
-              "I absolutely loved to work with Vera team. They are highly
-              skilled software engineers but also have the necessary business
-              acumen to understand our requests."
-            </p>
-            <span><strong>Stanley Finn</strong> - General, Zazoo Apps</span>
-          </div>
-          <a class="button-outline mfp-close as-button" href="#project">BACK</a>
-          <a class="button-solid" href="#your-link-here">VIEW</a>
-        </div>
-      </div>
-    </div>
+
     <!-- end of magnific popup project details content -->
 
     <!-- ABOUT -->
@@ -1656,7 +1365,7 @@
         <h2>TEAM</h2>
         <hr class="under-heading" />
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="team-member">
               <div class="image-container">
                 <img
@@ -1665,59 +1374,119 @@
                 />
                 <div class="hover-overlay">
                   <p>
-                    Salem is a professor of materials science in the Department
-                    of Mechanical Engineering. She is the University Senate Vice
-                    Chair and a formal Senate Chair of the Faculty
+                    <strong>AMCL Director</strong><br />
+                    Dr. Hanadi G. Salem, Professor of Materials & Manufacturing,
+                    Chair of the Department of Mechanical Engineering American
+                    University in Cairo More information
                   </p>
-                  <div class="social-links">
-                    <a href="#your-link-here">
-                      <span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                    <a href="#your-link-here">
-                      <span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                  </div>
                 </div>
               </div>
-              <h4>Dr. Hanadi Ahmed Ghoneim Salem</h4>
-              <p>
-                Professor of Advanced Materials & Manufacturing, Mechanical
-                Engineering Department
-              </p>
+              <h4>Dr. Hanadi Ahmed Salem</h4>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="team-member">
               <div class="image-container">
-                <img src="./images/team/download.jfif" alt="team member" />
+                <img src="./images/team/moataz.jpg" alt="team member" />
                 <div class="hover-overlay">
                   <p>
-                    Experienced manager with a successful background in design,
-                    print and project management.
+                    <strong>AMCL Director</strong><br />
+
+                    Moataz Attallah, professor Chair in Advanced Materials
+                    Processing, Metallurgy and Materials Science, The University
+                    of Birmingham, More information
                   </p>
-                  <div class="social-links">
-                    <a href="#your-link-here">
-                      <span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                    <a href="#your-link-here">
-                      <span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                  </div>
                 </div>
               </div>
-              <h4>Dr. Ashraf Nassef</h4>
+              <h4>Moataz Attallah</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="image-container">
+                <img src="./images/team/mohamed.jpg" alt="team member" />
+                <div class="hover-overlay">
+                  <p>
+                    <strong>Associate Professor of Design</strong><br />
+
+                    Mechanical Engineering Department, American University in
+                    Cairo More information
+                  </p>
+                </div>
+              </div>
+              <h4>Dr. Mohamed A. Fawzy</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="image-container">
+                <img src="./images/team/ahmed.jpg" alt="team member" />
+                <div class="hover-overlay">
+                  <p>
+                    WAAM Operations Engineer & Research Assistant Mechanical
+                    Engineering Department, B.Sc in metallurgical & Materials
+                    Engineering Faculty of Petroleum & Mining Engineering Suez
+                    University
+                  </p>
+                </div>
+              </div>
+              <h4>Eng. Ahmed El-Sokaty</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="image-container">
+                <img src="./images/team/abdelal.jpg" alt="team member" />
+                <div class="hover-overlay">
+                  <p>
+                    <strong>Design/Manufacturing Consultant </strong><br />
+
+                    Technical Operations Engineering, Mechanical Engineering
+                    Department, American University in Cairo M.Sc in Mechanical
+                    Engineering, Cairo University, More information
+                  </p>
+                </div>
+              </div>
+              <h4>Eng. Mohamed Abdelal</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="image-container">
+                <img src="./images/team/maha.jpg" alt="team member" />
+                <div class="hover-overlay">
+                  <p>
+                    <strong>Research Assistant</strong><br />
+
+                    Graduate Student Mechanical Engineering Department, American
+                    University in Cairo B.Sc. in Manufacturing Engineering, Ain
+                    Shams University (2019)
+                  </p>
+                </div>
+              </div>
+              <h4>Eng. Maha Esaied</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="image-container">
+                <img src="./images/team/omer.jpg" alt="team member" />
+                <div class="hover-overlay">
+                  <p>
+                    <strong>Research Assistant</strong><br />
+
+                    Graduate Student Mechanical Engineering Department, B.Sc.
+                    Mechanical Engineering - The American University in Cairo -
+                    Egypt (2019).
+                  </p>
+                </div>
+              </div>
+              <h4>Eng. Omar Oraby</h4>
               <p></p>
             </div>
           </div>
@@ -1883,75 +1652,7 @@
     <!-- FOOTER -->
     <div class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 footer-section">
-            <h4>Vera Template</h4>
-            <p>
-              Vera is the right landing page template for business and corporate
-              online projects.
-            </p>
-          </div>
-          <div class="col-md-4 footer-section">
-            <h4>Contact Details</h4>
-            <p>
-              12 Innovative Area, San Francisco, CA 9404,
-              <a class="inverse" href="#your-link-here"
-                >office@veratemplate.com</a
-              >
-              <a class="inverse" href="#your-link-here">www.vera.com</a>
-            </p>
-          </div>
-          <div class="col-md-4 footer-section">
-            <h4 class="last">Social Networks</h4>
-
-            <!-- Social Icons Container -->
-            <div class="social-icons-container">
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-              <span class="fa-stack fa-lg">
-                <a href="#your-link-here">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                </a>
-              </span>
-            </div>
-            <!-- end of social icons container -->
-          </div>
-        </div>
+        <div class="row"></div>
         <!-- end of row -->
       </div>
       <!-- end of container -->
@@ -1963,8 +1664,8 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12">
-            <span>Copyright © Vera - Business Landing Page Template by</span>
-            <a class="inverse" href="http://www.inovatik.com">Inovatik</a>
+            <span>Powered by </span>
+            <a class="inverse" href="http://www.rkanjel.com/">RK Anjel</a>
           </div>
         </div>
         <!-- end of row -->
